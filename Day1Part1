@@ -1,4 +1,3 @@
-fuel(x)::Int = x ÷ 3 - 2
+fuel(x)::Int = x/3 - 2
 fuel(x::String)::Int = fuel(parse(Int64, x))
-
 [fuel(i) for i in readlines("dec1-1.txt")] |> sum
